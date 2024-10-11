@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простий сайт на JS у Django</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Вітаю на простому сайті у Django!</h1>
+        <p id="message">Натисни кнопку, щоб змінити цей текст.</p>
+        <button id="changeTextBtn">Змінити текст</button>
+    </div>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
